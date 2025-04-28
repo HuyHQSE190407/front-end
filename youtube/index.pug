@@ -1,0 +1,38 @@
+
+mixin videoContent(image, time1, title, name, view, duration)
+    .video-wrapper
+        .video-top
+            img.video-image(src= image, alt='this is video')
+            .duration-video= time1
+        .container-content
+            .video-content
+                .logo-channel
+                    img.chanel-logo(src='../images/chanel-logo-06.png', alt='this is chanel', width='36px')
+                .video-title= title 
+                .logo-more
+                        i.bx.bx-dots-vertical-rounded.more-veritcal
+            .footer
+                .name-channel= name
+                .rating-duration
+                    .viewer= view
+                    span
+                        i.bx.bxs-circle.dot-logo
+                    .duration= duration
+
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Youtube
+        link(rel="stylesheet" href="style.css")
+        link(rel="stylesheet" href="sidebar.css")
+        link(rel="stylesheet" href="categories.css")
+        link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0")
+        
+    body 
+        .content
+            +videoContent("https://i.ytimg.com/vi/6tYB05v2KGo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLClTVelaf6R2wEYu_nuGES2It98VQ", "8:03", "Lý Do Mất Ngủ | Monsieur Tuna", "Monsieur tuna", "5,6 Tr lượt xem", "3 tuần trước")

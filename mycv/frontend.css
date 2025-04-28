@@ -1,0 +1,130 @@
+
+
+.frontend-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    transition: transform 1s ease, background-color 1.5s ease;
+
+}
+.frontend-skills:hover {
+    transform: scale(1.1,1.1);
+    background-color: rgba(70, 64, 67, 0.716);
+}
+
+
+.font-title {
+    text-align: center;
+}
+
+
+.javascript {
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.javascript:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgba(189, 250, 23, 0.495);
+}
+
+.js-icon { 
+    font-size: 32px;
+    color: rgb(251, 230, 71);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.react {
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.react:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgba(23, 170, 250, 0.999);
+}
+
+.react-icon {
+    font-size: 32px;
+    color: rgba(47, 0, 255, 0.884);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.html {
+    width: calc(100% - 50%);
+    display: flex;  
+    border-radius: 30px;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.html:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgba(250, 159, 23, 0.853);
+}
+
+.html-icon {
+    font-size: 32px;
+    color: rgba(241, 102, 14, 0.94);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.css {
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 1s ease;
+}
+
+.css:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgba(23, 208, 250, 0.853);
+}
+
+.css-icon {
+    font-size: 32px;
+    color: rgba(6, 143, 255, 0.94);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Playwrite RO';
+    src: url(../icon-cv/font/PlaywriteRO-VariableFont_wght.ttf) format('opentype');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../images/img.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.main-content-wrapper {
+    width: calc(100% - 6.791%);
+    height: 60%;
+    display: flex;
+    gap: 30px;
+    padding:40px 40px;
+    margin: 10px;
+    position: relative;
+}
+
+.structute {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.footer {
+    height: 20%;
+    border: 1px solid;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 0 3%;
+    text-align: center;
+}

@@ -1,0 +1,434 @@
+/* .list-feature {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.sidebar-menu {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    height: 100vh;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    width: 7px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+    background: 0f0f0f;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background-color: #555;    
+    border-radius: 6px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.sidebar-menu:hover {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+hr {
+    width: 216px;
+    margin: 20px 0;
+}
+
+.sidebar-menu i {
+    font-size: 24px;
+}
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    padding: 0 12px;
+    background-color: #272727;
+    border-radius: 8px;
+
+}
+
+.short-video {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.short-video:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.chanel-register {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.chanel-register:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.user-title:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.history:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.play-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.play-list:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.your-video {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.your-video:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.watch-later {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.watch-later:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.thump-up {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.thump-up:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.list-chanel-subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-list-subscribe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.list-chanel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.chanel-image {
+    border-radius: 50%;
+}
+
+.list-chanel-wrapper:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.trending:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.music:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.game:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.news:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.sports {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.sports:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.youtube-premium {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.youtube-premium:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.youtube-studio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.youtube-studio:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.youtube-music {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.youtube-music:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.youtube-kids {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.youtube-kids:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.setting:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.note-report {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.note-report:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.help:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.complain {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.complain:hover {
+    background-color: #272727;
+    border-radius: 8px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link .link-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.introduce1 {
+    text-decoration: none;
+}
+
+.megazine1 {
+    text-decoration: none;
+}
+
+.copyright1 {
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Trail Effect</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            background-color: #000;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <script>
+        document.addEventListener('mousemove', (e) => {        
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            document.body.appendChild(trail);   
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;   
+            trail.style.left = `${mouseX}px`; 
+            trail.style.top = `${mouseY -3}px`;giữa        
+            const angle = Math.random() * 30 - 10; 
+            trail.style.transform = `rotate(${angle}deg)`;
+            setTimeout(() => {
+                trail.remove();
+            }, 90);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+.backend-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    transition: transform 1s ease, background-color 1.5s ease;
+}
+
+.backend-skill:hover {
+    transform: scale(1.1,1.1);
+    background-color: rgba(70, 64, 67, 0.716);
+}
+
+.back-title {
+    text-align: center;
+}
+
+.csharp {
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.csharp:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgb(229, 29, 52);
+}
+
+
+.java {
+    border-radius: 30px;
+    width: calc(100% - 50%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.java:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: rgba(255, 94, 0, 0.614);
+}
+
+.java-icon {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    color: color-mix(in srgb, steelblue 70%, slategray 30%);
+}
+
+.sql {
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.sql:hover {
+    transform: scale(1.1);
+    width: calc(100% - 50%);
+    border-radius: 30px;
+    background-color: plum;
+}
+
+.sql-icon {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    color: color-mix(in srgb, rgb(255, 255, 255) 50%, rgb(3, 252, 28) 50%);
+}
