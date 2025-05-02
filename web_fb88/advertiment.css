@@ -1,0 +1,206 @@
+.adv {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 5%;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.order-hot-item {
+    display: flex;
+    width: clamp(100%, 25%, 100%);
+}
+
+.adv-image {
+    width: 100%;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.adv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    row-gap: 15px;
+    box-sizing: border-box;
+}
+
+
+.top-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-title {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2%;
+    font-weight: 500;
+    line-height: 1.556;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    border-radius: 20px;
+    background: linear-gradient(to top right, rgb(180, 218, 27), #ccc8f3, #2cccff, #81ffdf, rgb(255, 255, 255));
+}
+
+.staus-order {
+    width: 25%;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: rgb(200, 200, 200, 0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.middle-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 2.5%;
+    font-size: 20px;
+    position: absolute;
+    font-size: 20px;
+    white-space: nowrap;
+    bottom: 3px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    background-color: #95e4f6c4;
+    border-radius: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: transform 0.5s ease-in-out, background-color 0.5s, color 1s;
+
+}
+
+.price:hover {
+    transform: scale(1.1);
+    background-color: #127595;
+    color: rgb(255, 255, 255);
+}
+
+.amout {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #95e4f6c4;
+    border-radius: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: transform 0.5s ease-in-out, background-color 0.5s, color 0.5s;
+}
+
+.amout:hover {
+    transform: scale(1.1);
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn-order {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 198, 200);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.btn-order::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: rgb(246, 65, 45);
+    transition: width 0.2s ease;
+}
+
+.btn-order:hover::after {
+    width: 100%;
+}
+
+.order {
+    position: relative;
+    z-index: 2;
+    color: black;
+    transition: color 0.3s;
+}
+
+
+.btn:hover .order {
+    color: whitesmoke;
+}
+
+    .order-hot-item {
+        display: flex;
+        flex: 1 1 calc(25% - 20px);
+        min-width: 280px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .order-hot-item {
+            flex: 1 1 calc(50% - 20px);
+        }
+        .adv {
+            margin-top: 9%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .order-hot-item {
+            flex: 1 1 100%;
+        }
+        .adv {
+            margin-top: 21%;
+        }
+    }
+    

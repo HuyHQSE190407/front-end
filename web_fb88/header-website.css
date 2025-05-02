@@ -1,10 +1,12 @@
 .header-website {
     width: 100%;
-    border: 2px solid;
-    background-color: orangered;
+    background: linear-gradient( to right, rgb(246, 65, 45), rgb(250, 80, 48), rgb(253, 95, 50));
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 3;
+    top: 0;
 }
 
 .header-wrapper {
@@ -26,7 +28,7 @@
     font-size: 45px;
     font-style: italic;
     font-family: fantasy;
-    
+    white-space: nowrap;
 }
 
 .searchbar {
@@ -49,6 +51,11 @@
     position: relative;
 }
 
+.search-custom {
+    width: 100%;
+    font-size: 16px;
+}
+
 .btn-search {
     width: 12%;
     margin: 3px 2px;
@@ -66,10 +73,32 @@
 .icon-shop {
     font-size: 38px;
     color: white;
+    position: relative;
 }
 
 .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(90, 86, 86);
+  }
 
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
     position: absolute;
-    visibility: visible;
+    z-index: 1;
+    right: 0;
+    transition: transform 1s ease;
 }
+
+.icon-shop:hover .tooltip-text {
+    visibility: visible;
+    transform: scale(1.2);
+}
+

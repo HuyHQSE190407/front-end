@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="testCss.css">
+  <meta charset="UTF-8" />
+  <style>
+    .btn {
+      width: 120px;
+      height: 50px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    .btn-order {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(190, 198, 200); /* Nền ban đầu */
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .btn-order::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background-color: rgb(22, 214, 60); /* Lớp overlay */
+      z-index: 1; /* Trên nền, dưới chữ */
+      transition: width 0.8s ease;
+    }
+
+    .btn-order:hover::after {
+      width: 100%;
+    }
+
+    .order {
+      position: relative;
+      z-index: 2; /* Trên hết */
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .btn-order:hover .order {
+      color: white; /* Chữ đổi màu khi overlay phủ qua */
+    }
+  </style>
 </head>
 <body>
-    <div class="box1">hi</div>
+  <div class="btn">
+    <button type="submit" class="btn-order">
+      <span class="order">Hi</span>
+    </button>
+  </div>
 </body>
 </html>
